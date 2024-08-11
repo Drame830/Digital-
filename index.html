@@ -6,6 +6,18 @@
     <title>SMMA - Votre Agence de Marketing Digital</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+    
 <body>
     <header>
         <div class="container">
