@@ -62,15 +62,15 @@
         <div class="container">
             <h2 class="title-fade-in">Nos Statistiques</h2>
             <div class="statistics-item">
-                <h3>120+</h3>
+                <h3><span class="percentage" data-target="120">0</span>+</h3>
                 <p>Clients satisfaits</p>
             </div>
             <div class="statistics-item">
-                <h3>150%</h3>
+                <h3><span class="percentage" data-target="150">0</span>%</h3>
                 <p>Croissance annuelle</p>
             </div>
             <div class="statistics-item">
-                <h3>200+</h3>
+                <h3><span class="percentage" data-target="200">0</span>+</h3>
                 <p>Projets complétés</p>
             </div>
         </div>
@@ -90,5 +90,28 @@
             </nav>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.percentage');
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / 200; // Ajustez cette valeur pour accélérer ou ralentir l'animation
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 20); // Délai en millisecondes entre chaque incrémentation
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        });
+    </script>
 </body>
 </html>
