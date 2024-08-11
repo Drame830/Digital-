@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #ffffff; /* Couleur de fond blanche */
     color: #333;
 }
 
@@ -66,11 +66,28 @@ nav ul li a {
 
 section {
     padding: 60px 0;
-    background-color: #f4f4f4;
 }
 
-#about {
+#about, #services, #statistics {
     background-color: #fff;
+}
+
+h2 {
+    background: url('/mnt/data/5e248bd162017c0cb638d8a314713cca.jpg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    margin: 10px auto 0 auto;
 }
 
 .service, .statistics-item {
@@ -114,17 +131,6 @@ footer nav ul li a {
         opacity: 0;
     }
     to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
         opacity: 1;
     }
 }
