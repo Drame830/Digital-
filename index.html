@@ -10,41 +10,36 @@
     <header>
         <div class="container">
             <h1>SMMA</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <section id="hero">
         <div class="container">
-            <h2 class="title-fade-in">Nous construisons votre succès digital</h2>
+            <h2>Nous construisons votre succès digital</h2>
             <p>Des stratégies innovantes pour vous aider à croître.</p>
             <a href="#services" class="button-bounce">Découvrez nos services</a>
         </div>
     </section>
-<section id="statistics">
-        <div class="container">
-            <h2 class="title-fade-in">Nos Statistiques</h2>
-            <div class="statistics-item">
-                <h3><span class="percentage" data-target="120">0</span>+</h3>
-                <p>Clients satisfaits</p>
-            </div>
-            <div class="statistics-item">
-                <h3><span class="percentage" data-target="150">0</span>%</h3>
-                <p>Croissance annuelle</p>
-            </div>
-            <div class="statistics-item">
-                <h3><span class="percentage" data-target="200">0</span>+</h3>
-                <p>Projets complétés</p>
-            </div>
+
     <section id="about">
         <div class="container">
-            <h2 class="title-fade-in">À propos de nous</h2>
+            <h2>À propos de nous</h2>
             <p>SMMA est une agence de marketing digital dédiée à vous fournir des solutions innovantes pour booster votre présence en ligne et augmenter votre chiffre d'affaires.</p>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2 class="title-fade-in">Nos Services</h2>
+            <h2>Nos Services</h2>
             <div class="service">
                 <img src="service1.jpg" class="image-zoom-in" alt="Service 1">
                 <h3>Stratégie de Marketing</h3>
@@ -60,16 +55,39 @@
                 <h3>SEO</h3>
                 <p>Optimisez votre site pour les moteurs de recherche.</p>
             </div>
-            </section>
-        
+        </div>
     </section>
+
+    <section id="statistics">
+        <div class="container">
+            <h2>Nos Statistiques</h2>
+            <div class="statistics-item">
+                <h3><span class="percentage" data-target="120">0</span>+</h3>
+                <p>Clients satisfaits</p>
+            </div>
+            <div class="statistics-item">
+                <h3><span class="percentage" data-target="150">0</span>%</h3>
+                <p>Croissance annuelle</p>
+            </div>
+            <div class="statistics-item">
+                <h3><span class="percentage" data-target="200">0</span>+</h3>
+                <p>Projets complétés</p>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 SMMA. Tous droits réservés.</p>
-            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 
@@ -81,11 +99,11 @@
                 const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
-                    const increment = target / 200; // Ajustez cette valeur pour accélérer ou ralentir l'animation
+                    const increment = target / 300; // Ajustez cette valeur pour ralentir l'animation
 
                     if (count < target) {
                         counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 20); // Délai en millisecondes entre chaque incrémentation
+                        setTimeout(updateCount, 30); // Délai en millisecondes entre chaque incrémentation
                     } else {
                         counter.innerText = target;
                     }
