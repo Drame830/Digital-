@@ -46,7 +46,6 @@ nav ul li a {
 
 #hero {
     background: url("5e248bd162017c0cb638d8a314713cca.jpg") no-repeat center center/cover;
-    color: black;
     text-align: center;
     padding: 50px 0;
     animation: fadeIn 2s ease-in;
