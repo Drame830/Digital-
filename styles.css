@@ -82,7 +82,7 @@ section.visible {
 }
 
 h2 {
-    background: url('/mnt/data/5e248bd162017c0cb638d8a314713cca.jpg') no-repeat center center;
+    background: url("5e248bd162017c0cb638d8a314713cca.jpg") no-repeat center center;
     background-size: cover;
     color: black;
     text-align: center;
