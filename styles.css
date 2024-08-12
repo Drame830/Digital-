@@ -81,11 +81,12 @@ section.visible {
 }
 
 #statistics {
-    background-color:#007BFF;
+    background-color: #007BFF;
 }
 
 h2 {
     background: url('5e248bd162017c0cb638d8a314713cca.jpg') no-repeat center center;
+    background-color: #007BFF;
     background-size: cover;
     color: black;
     text-align: center;
