@@ -45,8 +45,9 @@ nav ul li a {
 }
 
 #hero {
-    background: url("https://images.app.goo.gl/KdQuaFDLtCJhFzYa9") no-repeat center center/cover;
-    text-align: center;
+    background: url('https://images.app.goo.gl/KdQuaFDLtCJhFzYa9.jpg') no-repeat center center/cover;
+}
+  text-align: center;
     padding: 5px 0;
     animation: fadeIn 2s ease-in;
 }
