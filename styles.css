@@ -60,7 +60,7 @@ nav ul li a {
     font-weight: bold;
     border-radius: 5px;
     margin-top: 20px;
-    animation: bounce 5s;
+    animation: bounce 7s;
 }
 
 section {
@@ -86,7 +86,7 @@ h2 {
     background-size: cover;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 0px;
     position: relative;
 }
 
