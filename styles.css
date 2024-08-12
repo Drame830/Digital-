@@ -75,8 +75,13 @@ section.visible {
     transform: translateY(0);
 }
 
-#about, #services, #statistics {
+#about, #services {
     background-color: #fff;
+}
+}
+
+#statistics {
+    background-color:#007BFF;
 }
 
 h2 {
