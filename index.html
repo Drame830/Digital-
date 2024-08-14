@@ -3,21 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie d'Images</title>
+    <title>Ton Agence de Marketing Digital en Guinée</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="gallery">
-        <div class="slides">
-            <img src="images/Screenshot_20240814-111912.png" alt="Image 1">
-            <img src="images/Screenshot_20240814-111920.png" alt="Image 2">
-            <img src="images/Screenshot_20240814-111926.png" alt="Image 3">
-            <img src="images/Screenshot_20240814-111935.png" alt="Image 4">
+    <!-- En-tête du site -->
+    <header>
+        <div class="header-content">
+            <h1>Bienvenue chez [Nom de ton agence]</h1>
+            <p>Votre partenaire en marketing digital en Guinée</p>
         </div>
-        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-    </div>
+    </header>
 
-    <script src="scripts.js"></script>
+    <!-- Section 'Nos Services' -->
+    <section id="services">
+        <h2>Nos Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Gestion des Réseaux Sociaux</h3>
+                <p>Nous vous aidons à gérer vos réseaux sociaux pour accroître votre visibilité.</p>
+            </div>
+            <div class="service">
+                <h3>SEO</h3>
+                <p>Améliorez votre classement sur les moteurs de recherche avec nos services SEO.</p>
+            </div>
+            <div class="service">
+                <h3>Publicité en Ligne</h3>
+                <p>Boostez votre entreprise avec des campagnes publicitaires ciblées.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 'À Propos de Nous' -->
+    <section id="about">
+        <h2>À Propos de Nous</h2>
+        <p>[Nom de ton agence] est une agence de marketing digital basée en Guinée, spécialisée dans le développement de stratégies efficaces pour aider les entreprises à se développer.</p>
+    </section>
+
+    <!-- Section 'Témoignages' -->
+    <section id="testimonials">
+        <h2>Témoignages</h2>
+        <div class="testimonial">
+            <p>"[Nom de ton agence] nous a aidés à tripler notre chiffre d'affaires en seulement six mois."</p>
+            <cite>– Client Satisfait</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Leur expertise en SEO a grandement amélioré notre visibilité en ligne."</p>
+            <cite>– Client Satisfait</cite>
+        </div>
+    </section>
+
+    <!-- Section 'Contact' -->
+    <section id="contact">
+        <h2>Contactez-Nous</h2>
+        <p>Pour toute demande de renseignements ou de devis, veuillez nous contacter via le formulaire ci-dessous.</p>
+        <form>
+            <input type="text" name="name" placeholder="Votre nom">
+            <input type="email" name="email" placeholder="Votre email">
+            <textarea name="message" placeholder="Votre message"></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 [Nom de ton agence]. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
