@@ -65,7 +65,7 @@ nav ul li a {
 
 section {
     padding: 20px 0;
-    opacity: 1; /* Initial opacity set to 1 to prevent disappearance */
+    opacity: 1;
     transform: translateY(0);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -77,6 +77,14 @@ section.visible {
 
 #about, #services, #statistics {
     background-color: #fff;
+}
+
+#engage {
+    background: url('votre-image-url.jpg') no-repeat center center/cover; /* Image d'arrière-plan pour la section "Impliquez votre public" */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
 }
 
 h2 {
@@ -163,5 +171,4 @@ footer nav ul li a {
     60% {
         transform: translateY(-5px);
     }
-}
-
+    }
