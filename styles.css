@@ -1,3 +1,4 @@
+/* Style global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,22 +7,42 @@ body {
     color: #333;
 }
 
+/* En-tête */
 header {
-    background-color: #333;
+    background-color: #0056b3; /* Fond bleu */
     color: #fff;
-    padding: 20px 0;
+    padding: 20px;
+    position: relative;
     text-align: center;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
-header p {
-    font-size: 1.2em;
+/* Menu avec trois points */
+.menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
+.menu span {
+    height: 4px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+}
+
+/* Sections */
 section {
     padding: 40px 20px;
     text-align: center;
@@ -32,9 +53,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Services */
 .services-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -43,6 +66,7 @@ h2 {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
+    margin: 10px;
 }
 
 .service h3 {
@@ -50,6 +74,7 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Formulaire de contact */
 form {
     display: flex;
     flex-direction: column;
@@ -66,7 +91,7 @@ input, textarea {
 
 button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #0056b3;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -74,11 +99,12 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #003d80;
 }
 
+/* Pied de page */
 footer {
-    background-color: #333;
+    background-color: #0056b3;
     color: #fff;
     text-align: center;
     padding: 20px 0;
